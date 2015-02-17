@@ -6,7 +6,7 @@
 // and jade as template engine (http://jade-lang.com/).
 
 var express = require('express');
-
+//crash and burn
 // setup middleware
 var app = express();
 app.use(app.router);
@@ -38,4 +38,5 @@ var port = (process.env.VCAP_APP_PORT || 3000);
 // Start server
 app.listen(port, host);
 console.log('App started on port ' + port);
+console.log('Hi John');
 
